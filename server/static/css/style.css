@@ -1,0 +1,46 @@
+#urlform input[type="submit"]{
+	display:block;
+	vertical-align: super;
+}
+#urlform label{
+	display:inline-block;
+}
+.errors{
+	color: red;
+	display: inline;
+}
+p a{
+	text-decoration:none;
+	color:#5bb75b;
+}
+
+#shorty{
+	display:none;
+}
+input[type="radio"]{
+	margin: -2px 0 0;
+}
+.jumbotron{
+	background-size:50%;
+	background-repeat: repeat;
+	background: url('../img/background_img.JPG');
+    background-position: center center;
+  	padding-bottom: 105px}
+}
+.lead{
+	margin-bottom: 3px;
+	cursor: default;
+}
+ul, ol{
+	padding-bottom: 0px;
+}
+
+.individualPhoto
+{
+	display:none;
+}
+#logo
+{
+	width: 40px;
+	margin-left: -21px;
+}

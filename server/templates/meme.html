@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<title>MIMS Generator</title>
+	<link href="static/css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="static/css/meme.css" rel="stylesheet" type="text/css">
+	<link href="static/css/style.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+	<div class="container">
+		<div class="header">
+	    	<ul class="nav nav-pills pull-right">
+	          <li><a href="home" class="headerButton">Home</a></li>
+		          <li><a href="#" class="headerButton">About</a></li>
+		          <li class="active"><a href="meme" class="headerButton">Meme</a></li>
+	        </ul>
+			<h3 class="text-muted">
+			<img id="logo" src="static/img/100px_Luigi.png">ui.gi</h3>
+		</div><br>
+		<div id="wrapper">
+		<div id="input">
+			<label for="backgrounds">Step 1. Choose a photo</label>
+			<div id="backgrounds">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5202.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5217.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5226.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5229.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5233.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5246.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5204.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5248.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5267.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_6027.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5240.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5253.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5277.JPG">
+				<img class="thumbnails" src="static/img/memeBackgrounds/IMG_5821.JPG">
+				
+			</div>
+			<br>
+			<label for="inputs">Step 2. Write away</label>
+			<div id="inputs">
+				<label for="textTop" class="textLabel">Top text:</label>
+				<input type="text" id="textTop" maxLength="100" required><br>	
+				<label for="textBottom"  class="textLabel">Bottom text:</label>
+				<input type="text" id="textBottom" maxLength="85">
+			</div><br>
+			<a href="#" class="btn btn-success btn-large" id="savingMeme">Save MIMS Meme</a>
+			
+		</div>
+
+			<div id="result">
+				<div id="memeTop"><span class="memeText" ></span></div>
+				<div id="memeBottom"><span class="memeText"></span></div>
+			</div>
+		</div>
+		<div id="endHTML"></div>
+	</div>
+	<script type="text/javascript" src="static/js/jquery-1.10.2.min.js"></script>
+	<script src="static/js/meme.js"></script>
+	<script src="static/js/jquery.validate.min.js"></script>
+</body>
+</html>
