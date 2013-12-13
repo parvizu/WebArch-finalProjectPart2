@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lui.Gi Shorten this URL!</title>
+    <link rel="stylesheet" href="bootstrap.min.css" type="text/css">
+    <style>
+      body {
+        min-width: 220px;
+        overflow-x: hidden;
+        padding-left: 20px;
+        background-image: url("extension_background.png"); 
+        background-size: cover;
+        }
+		#urlform input[type="submit"]{
+			display:block;
+			vertical-align: super;
+		}
+		#urlform label{
+			display:inline-block;
+		}
+		.errors{
+			color: red;
+			margin-left: 9em;
+			margin-top: -2em;
+		}
+		p a{
+			text-decoration:none;
+			color:black;
+		}
+		#shorty{
+			display:none;
+		}
+		input[type="radio"]{
+			margin: -2px 0 0;
+		}
+		.lead{
+			margin-bottom: 16px;
+			cursor: default;
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-weight:bold;
+			line-height: 21px;
+		}
+		.compact{
+		margin-top:-10px;
+		}
+		input[type='text']{
+			width:185px;
+		}
+		.lead p{
+			margin: 0 auto;
+			font-weight: bold;
+			width: 34%;
+			padding-bottom: 12px;
+			padding-top: 12px;
+		}
+		#urlerror{
+			background-color:white;
+		}
+		#urlerror  p{
+			color:red;
+			font-weight:bold;
+		}
+		input[type='submit']{
+			margin-left: 104px;
+			margin-top: -12px;
+			width: 77px;
+			padding-left: 8px;
+		}
+		
+    </style>
+    <script src="jquery.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<form id="urlform">
+		<div class="lead">
+			<p>Lui.gi</p>
+			<div class="compact">
+				<input type="radio" name="shortToggle" id="shortToggle1" value="no" checked>&nbsp;&nbsp;Automatically Generate
+			</div>
+			<div>
+				<input type="radio" name="shortToggle" id="shortToggle2" value="yes">&nbsp;&nbsp;Create My Own
+			</div> 
+		</div>
+		<div id="shorty" class="compact">
+			<label class="lead">Short URL:
+				<input type="text" name="shortUrl" id="shortUrl" placeHolder="Insert your shortened URL" disabled="disabled">
+			</label>
+		</div>
+		<input type="submit" class="btn btn-lg btn-success compact" value="Generate">
+	</form>	
+	<div id="returningShortURL"></div>  
+	<div id="urlerror"></div>
+  </body>
+</html>
+
